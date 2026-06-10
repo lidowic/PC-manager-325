@@ -1,0 +1,14 @@
+[Unit]
+Description=PC Remote Admin Agent
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/pc-agent
+ExecStart=/opt/pc-agent/.venv/bin/python -m agent.main --config /opt/pc-agent/agent.yaml
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

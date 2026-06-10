@@ -1,0 +1,17 @@
+machines:
+  - name: win-workstation-01
+    host: 192.168.0.110
+    port: 9021
+    ssh_port: 22
+    ssh_user: Administrator
+    remote_desktop_url: "http://192.168.0.110:6080/vnc.html"
+  - name: win-workstation-02
+    host: 192.168.0.111
+    port: 9021
+    ssh_port: 22
+    ssh_user: Administrator
+    remote_desktop_url: "http://192.168.0.111:6080/vnc.html"
+database_path: ./client.db
+private_key_path: C:/Users/Administrator/.ssh/id_ed25519
+public_key_path: C:/Users/Administrator/.ssh/id_ed25519.pub
+connect_timeout: 5
